@@ -2,20 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: Vazirmatn1;
+  src: url("../../src/Font/Vazirmatn-Black.woff2") format("woff2") ;
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: Vazirmatn2;
+  src: url("../../src/Font/Vazirmatn-Bold.woff2") format("woff2") ;
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: Vazirmatn3;
+  src: url("../../src/Font/Vazirmatn-Bold.woff2") format("woff2") ;
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: Vazirmatn4;
+  src: url("../../src/Font/Vazirmatn-Thin.woff2") format("woff2") ;
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: YekanBakh1;
+  src: url("../../src/Font/YekanBakh-Heavy.woff") format("woff") ;
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: YekanBakh2;
+  src: url("../../src/Font/YekanBakh-Bold.woff") format("woff") ;
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: YekanBakh3;
+  src: url("../../src/Font/YekanBakh-Thin.woff2") format("woff2") ;
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
