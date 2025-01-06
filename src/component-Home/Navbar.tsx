@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import Icon from '../Image/Icon.png';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ function Navbar() {
           {/* همبرگر منو */}
           <RxHamburgerMenu
             onClick={ShowOff}
-            className="sm:hidden text-[23px] font-bold text-black cursor-pointer"/>
+            className="sm:hidden text-[23px] font-bold text-black cursor-pointer" />
           {/* دکمه ورود */}
           <button
             className="rounded-lg bg-blue-600 hover:bg-blue-900 text-[12px]
@@ -28,32 +29,42 @@ function Navbar() {
           </button>
 
           {/* منو اصلی */}
-          <ul className={`gap-6 hidden sm:flex flex-row-reverse font-Vazirmatn2 sm:text-[10px] 
-             sm:gap-3 md:text-[14px] md:gap-2 lg:text-[16px] lg:gap-5 xl:text-[18px] xl:gap-8`} >        
-           <li className="hover:text-black cursor-pointer text-gray-500">
-            چرا طلای خرداد
-               </li>
+          <ul
+            className={`gap-6 hidden sm:flex flex-row-reverse font-Vazirmatn2 sm:text-[10px] 
+             sm:gap-3 md:text-[14px] md:gap-2 lg:text-[16px] lg:gap-5 xl:text-[18px] xl:gap-8`}
+          >
             <li className="hover:text-black cursor-pointer text-gray-500">
-              مراحل خرید
+              <Link href="">چرا طلای خرداد</Link>
             </li>
             <li className="hover:text-black cursor-pointer text-gray-500">
-              مجوزها
+              <Link href="">مراحل خرید</Link>
             </li>
             <li className="hover:text-black cursor-pointer text-gray-500">
-              دانلود اپلیکیشن
+              <Link href="">مجوزها</Link>
             </li>
             <li className="hover:text-black cursor-pointer text-gray-500">
-              تماس با ما
+              <Link href="">دانلود اپلیکیشن</Link>
+            </li>
+            <li className="hover:text-black cursor-pointer text-gray-500">
+              <Link href="/ContactUs">تماس با ما</Link>
             </li>
           </ul>
-          <div className="flex gap-3 items-center text-center">
-            <h1
-              className="font-medium font-Vazirmatn2 hover:text-gray-600 
+
+          <Link href="/" >
+
+            <div className="flex gap-3 items-center text-center">
+              <h1
+                className="font-medium font-Vazirmatn2 hover:text-gray-600 
               sm:text-[10px] md:text-[13px] lg:text-[17px] xl:text-[26px]" >
-              طلای خرداد
-            </h1>
-            <Image src={Icon} alt="Logo" />
-          </div>
+                طلای خرداد
+              </h1>
+              <Image src={Icon} alt="Logo" />
+            </div>
+
+          </Link>
+
+
+
         </div>
 
         {/* زیرمنوی همبرگر */}

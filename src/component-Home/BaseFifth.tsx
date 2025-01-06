@@ -26,8 +26,8 @@ function BaseFifth() {
 
 
     return (
-        <div className='h-full w-full overflow-x-auto  flex items-center
-         justify-between overflow-hidden mx-auto  '>
+        <div className='h-full w-full overflow-x-auto  flex items-center justify-between overflow-hidden mx-auto'>
+        
 
 
             {
