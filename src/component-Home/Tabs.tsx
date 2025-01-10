@@ -16,13 +16,16 @@ const fetchRates = async () => {
     return response.data.data;
 };
 
+
+
+
 function Tabs() {
     const tabsData = ["فـروش", "خـریـد"];
 
-    const [buyAmount, setBuyAmount] = useState("");
-    const [sellAmount, setSellAmount] = useState("");
-    const [equivalentAmount, setEquivalentAmount] = useState("");
-    const [sellEquivalentAmount, setSellEquivalentAmount] = useState("");
+    const [buyAmount, setBuyAmount] = useState("");// گرفتم مقدار عددی از کاربر برای تب خرید
+    const [sellAmount, setSellAmount] = useState("");// گرفتم مقدار عددی از کاربر برای تب فروش
+    const [equivalentAmount, setEquivalentAmount] = useState(""); // نمایش معادل تومان برای خرید
+    const [sellEquivalentAmount, setSellEquivalentAmount] = useState("");//نمایش معادل تومان برای فروش    
 
     const { data: rates, isLoading, isError, error } = useQuery({
         queryKey: ["rates"],
@@ -79,19 +82,16 @@ function Tabs() {
                 {tabsData.map((text, index) => (
                     <Tab
                         key={index}
-                        className={({ selected }) =>
-                            classNames(
-                                "px-[70px] py-3 text-[16px] font-medium border-b-2 rounded-t-lg transition duration-300 font-Vazirmatn2 text-blue-700 ",
+                        className={({ selected }) => classNames("px-[70px] py-3 text-[16px] font-medium border-b-2 rounded-t-lg transition duration-300 font-Vazirmatn2 text-blue-700 ",
                                 selected
                                     ? "border-blue-700  bg-slate-100 shadow-xl"
-                                    : "border-transparent text-gray-800 bg-slate-200 hover:bg-gray-300 hover:border-gray-300 hover:text-gray-700"
-                            )
-                        }
-                    >
+                                    : "border-transparent text-gray-800 bg-slate-200 hover:bg-gray-300 hover:border-gray-300 hover:text-gray-700")} >
                         {text}
                     </Tab>
                 ))}
             </Tab.List>
+
+
             <Tab.Panels>
                 <Tab.Panel>
                     {/* محتوای تب فروش */}
@@ -196,8 +196,6 @@ function Tabs() {
                                 خـریـد
                             </button>
                         </div>
-
-
                     </div>
                 </Tab.Panel>
             </Tab.Panels>

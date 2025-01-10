@@ -35,7 +35,7 @@ export default function BaseSixth() {
 
 
   return (
-    <div className='mt-16 h-[1300px] w-full flex flex-col items-center justify-between overflow-hidden overflow-x-scroll bg-blue-600'>
+    <div className='mt-16 min-h-[200px] w-full flex flex-col items-center justify-between overflow-hidden overflow-x-scroll bg-blue-600'>
 
 
 
@@ -46,8 +46,8 @@ export default function BaseSixth() {
             <div className=' container flex justify-between items-center'>
               {/* // سمت چپ شکل موبایل */}
 
-              <div className='hidden relative sm:h-[250px] sm:w-[250px] md:block md:h-[650px] 
-                md:w-[600px] lg:h-[650px] lg:w-[600px] mt-16 lg:mt-36'>
+              <div className='hidden mt-32 relative sm:h-[250px] sm:w-[250px] md:block md:h-[650px] 
+                md:w-[600px] lg:h-[650px] lg:w-[600px] lg:mt-36'>
                 <div style={{ width: '100%', height: '100%', paddingTop: 88, paddingLeft: 267, paddingRight: 268, justifyContent: 'center', alignItems: 'center', display: 'inline-flex' }}>
                   <div style={{ width: 435, height: 860, position: 'relative', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex' }}>
                     <div style={{ width: 431, height: 860, position: 'relative' }}>
@@ -74,32 +74,28 @@ export default function BaseSixth() {
 
               </div>
 
-
-
-
-
               {/* نوشته سمت راست */}
 
               <div className="space-y-10 px-4 sm:w-[700px] md:w-[670px] text-justify">
                 <div className=" text-white text-[16px] sm:text-[23px] md:text-[28px] 
-          lg:text-[40px] font-semibold font-Vazirmatn1 text-right whitespace-nowrap hidden lg:block">
+               lg:text-[40px] font-semibold font-Vazirmatn1 text-right hidden lg:block">
                   دریافت اپلیکیشن طلای خرداد
                 </div>
-                <div className="text-[16px] sm:text-[11px] md:text-[14px] lg:text-[17px] text-white font-Vazirmatn2  text-right rtl hidden lg:block">
+                <div className="text-[16px] sm:text-[11px] md:text-[14px] lg:text-[17px] text-white font-Vazirmatn2 text-right hidden lg:block">
                   خرید و فروش طلای آب شده یکی از انواع محبوب سرمایه‌گذاری در ایران است که باعث می‌شود از سرمایه خود در برابر تورم محافطت کنید و سود ببرید. برای خرید طلا ابشده می‌توانید به صورت حضوری به طلافروشی‌ها مراجعه کنید؛ اما روش خرید طلای آب شده آنلاین بسیار سریع‌تر، راحت‌تر و امن‌تر است
                 </div>
-                <div className='relative'>
-                  <div className="text-right space-y-10 ">
-                    <div className='flex flex-col space-y-3 mt right-60 absolute top-0 '>
-                      <div className='space-y-20'>
+                <div className='relative justify-center items-center text'>
+                  <div className="">
+                    <div className='flex flex-col -space-y-20 right-40 absolute top-0 '>
+                      <div className='w-64 h-40 '>
                         <Image className='hidden  lg:block' src={GroupA} alt="GroupA" width={200} height={80} layout="intrinsic" />
                       </div>
                       <div>
-                        <Image className='hidden  lg:block' src={Un} alt='Groupb' width={200} height={80} layout="intrinsic" />
+                        <Image className='hidden  lg:block' src={Un} alt="Groupb" width={200} height={80} layout="intrinsic" />
                       </div>
                     </div>
 
-                    <div className='flex flex-col space-y-3 right-0 absolute -top-10'>
+                    <div className='flex flex-col space-y-5 mt-10 right-0 absolute -top-10'>
                       <div>
                         <Image className='hidden  lg:block' src={Groupb} alt="GroupA" width={200} height={80} layout="intrinsic" />
                       </div>
@@ -107,6 +103,7 @@ export default function BaseSixth() {
                         <Image className='hidden  lg:block' src={Groupc} alt='Groupb' width={200} height={80} layout="intrinsic" />
                       </div>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -117,9 +114,8 @@ export default function BaseSixth() {
 
 
             {/* // فوتر پایین پایین */}
-            <div className='bg-[#061C3D] h-[600px] w-full flex-col justify-between items-center z-50'>
-              <div className='container flex justify-between items-center text-white mt-28'>
-
+            <div className='bg-[#061C3D] min-h-[200px] w-full flex-col justify-between items-center z-50'>
+              <div className='container h-full w-full flex justify-between items-center text-white mt-28 py-20'>
 
 
                 <div className='hidden md:block flex-col text-[14px] w-[200px] text-right text-gray-600 font-Vazirmatn2 space-y-4'>
@@ -170,9 +166,6 @@ export default function BaseSixth() {
 
                 </div>
 
-
-
-
                 <div className='flex-col text-[14px] w-[200px] text-right text-gray-600 font-Vazirmatn2 space-y-4 '>
                   <div className='text-white'>
                     ارتباط بیشتر
@@ -190,9 +183,6 @@ export default function BaseSixth() {
                     حریم خصوصی
                   </div>
                 </div>
-
-
-
 
                 <div className='flex-col text-[14px] w-[200px] text-right text-gray-600 font-Vazirmatn2 space-y-4 '>
                   <div className='text-white'>
@@ -213,8 +203,6 @@ export default function BaseSixth() {
                 </div>
 
 
-
-
                 <div className='text-[14px] w-[450px] text-right font-Vazirmatn2 '>
                   <div className="flex gap-3 items-center text-right justify-end ">
                     <h1
@@ -230,7 +218,6 @@ export default function BaseSixth() {
                 </div>
 
 
-
               </div>
             </div>
 
@@ -242,7 +229,7 @@ export default function BaseSixth() {
 
 
 
-            <div className='mt-20 text-white flex-col justify-center items-center text-center overflow-x-scroll'>
+            <div className='mt-20 text-white flex-col justify-center items-center text-center overflow-hidden overflow-x-scroll'>
 
 
             <div className=" text-white text-[19px] font-semibold font-Vazirmatn1 whitespace-nowrap">

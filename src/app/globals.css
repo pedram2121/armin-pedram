@@ -57,5 +57,7 @@
   font-display: swap;
 }
 
-
+.rtl{
+  direction: rtl;
+}
 

@@ -175,7 +175,7 @@ function BaseThird() {
 
                 ) : (
 
-                        <div className='mt-28  text-white flex flex-col items-center 
+                    <div className='mt-28  text-white flex flex-col items-center 
                         text-center min-h-screen overflow-y-auto overflow-x-hidden'>
 
                         {/* مختص متن و دکمه فعلا */}

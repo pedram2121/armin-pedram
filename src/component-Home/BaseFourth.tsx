@@ -25,16 +25,14 @@ function BaseFourth() {
 
 
     return (
-        <div className='h-screen w-[100%] flex items-center justify-between
-         overflow-hidden '>
-
+        <div className='h-screen w-full flex items-center justify-between text-center overflow-hidden'>
             {
                 !isSmallScreen3 ? (
 
                     <div className='container'>
 
                         {/* // متن ابتدایی */}
-                        <div className='text-center font-Vazirmatn2 space-y-20 -mt-44'>
+                        <div className='text-center flex flex-col w-auto justify-center items-center font-Vazirmatn2 space-y-20 -mt-44'>
                             <div className="text-2xl md:text-3xl lg:text-4xl sm:text-2xl">
                                 مـجـوز هـا
                             </div>
@@ -62,9 +60,9 @@ function BaseFourth() {
 
                 ) : (
 
-                        <div className='flex-col   text-center justify-center items-center font-Vazirmatn2 overflow-y-auto overflow-x-hidden'>
+                        <div className='flex flex-col w-auto text-center justify-center items-center font-Vazirmatn2 overflow-y-auto'>
                                       
-                            <div className='text-center space-y-5 px-12 justify-center'>
+                            <div className='text-center space-y-5 px-12 w-auto justify-center items-center'>
                                 <div className="text-2xl">
                                     مـجـوز هـا
                                 </div>

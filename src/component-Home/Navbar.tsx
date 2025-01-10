@@ -34,16 +34,16 @@ function Navbar() {
              sm:gap-3 md:text-[14px] md:gap-2 lg:text-[16px] lg:gap-5 xl:text-[18px] xl:gap-8`}
           >
             <li className="hover:text-black cursor-pointer text-gray-500">
-              <Link href="">چرا طلای خرداد</Link>
+              <Link href="/AboutUS">چرا طلای خرداد</Link>
             </li>
             <li className="hover:text-black cursor-pointer text-gray-500">
-              <Link href="">مراحل خرید</Link>
+              <Link href="/Privacy"> امنیت و شفافیت </Link>
             </li>
             <li className="hover:text-black cursor-pointer text-gray-500">
-              <Link href="">مجوزها</Link>
+              <Link href="/TermsandConditions">مجوزها</Link>
             </li>
             <li className="hover:text-black cursor-pointer text-gray-500">
-              <Link href="">دانلود اپلیکیشن</Link>
+              <Link href="/RulesAndRegulations"> قوانین و مقررات </Link>
             </li>
             <li className="hover:text-black cursor-pointer text-gray-500">
               <Link href="/ContactUs">تماس با ما</Link>
@@ -72,11 +72,11 @@ function Navbar() {
           <div className="sm:hidden bg-gray-100 rounded-lg mt-2 p-4 px-6 absolute text-center
           font-Vazirmatn3">
             <ul className="flex flex-col gap-4 text-gray-600">
-              <li className="hover:text-black cursor-pointer">چرا طلای خرداد</li>
+              <li className="hover:text-black cursor-pointer">   <Link href="/AboutUS">چرا طلای خرداد</Link> </li>
               <li className="hover:text-black cursor-pointer">مراحل خرید</li>
-              <li className="hover:text-black cursor-pointer">مجوزها</li>
-              <li className="hover:text-black cursor-pointer">دانلود اپلیکیشن</li>
-              <li className="hover:text-black cursor-pointer">تماس با ما</li>
+              <li className="hover:text-black cursor-pointer">  <Link href="/TermsandConditions"> مجوزها </Link>  </li>
+              <li className="hover:text-black cursor-pointer">  <Link href="/RulesAndRegulations"> قوانین و مقررات </Link> </li>
+              <li className="hover:text-black cursor-pointer">  <Link href="/ContactUs">تماس با ما</Link> </li>
             </ul>
           </div>
         )}
