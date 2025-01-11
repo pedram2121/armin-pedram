@@ -4,6 +4,8 @@ import React from 'react'
 import P91 from '../../Image/image 91.png'
 import P92 from '../../Image/image 92.png'
 import P93 from '../../Image/Rectangle 19.png'
+import senf from '../../Image/Senf.png'
+import Bazargan from '../../Image/Bazargan.png'
 
 function TermsandConditions() {
   return (
@@ -36,7 +38,6 @@ function TermsandConditions() {
 
       </div>
 
-
       <div className='bg-white h-auto w-full overflow-x-auto flex flex-col items-center justify-between overflow-hidden mx-auto py-20 font-Vazirmatn2 '>
         <div className='container'>
 
@@ -57,20 +58,51 @@ function TermsandConditions() {
 
           </div>
 
-
-          <div className="w-full h-[500px] bg-[#F5F6F7] border-t-8 border-t-blue-600 rounded-b-xl mt-32 rtl">
+          <div className="w-full h-[650px] bg-[#F5F6F7] border-t-8 border-t-blue-600 rounded-b-xl mt-32 rtl">
             <div className="flex w-auto justify-end items-center p-10 text-right text-[30px] text-black space-x-2 rtl:space-x-reverse relative">
               <div className='absolute right-16 top-10'>   پروانه کسب خرده‌فروشی طلای آب‌شده شرکت سرمایه زرین ماندگار (میلی)  </div>
               <div className='absolute right-10 top-11'>•</div>
             </div>
             <div className='flex justify-center items-center text-center w-full mt-16'>
               <div>
-                <Image className='w-96 h-80' src={P93} alt='p91' />
+                <Image className='w-[600px] h-96' src={P93} alt='p91' />
               </div>
+            </div>
+            <div className='text-center mt-8'>
+               <button className='bg-blue-600 px-10 py-3 rounded-lg text-white'>
+              استعلام مجوز از اتحادسه طلا و جواهر
+            </button>
             </div>
           </div>
 
+          <div className="w-full h-[650px] bg-[#F5F6F7] border-t-8 border-t-blue-600 rounded-b-xl mt-32 rtl">
+            <div className="flex w-auto justify-end items-center p-10 text-right text-[30px] text-black space-x-2 rtl:space-x-reverse relative">
+              <div className='absolute right-16 top-10'>  مجوز نظام صنفی رایانه ای  </div>
+              <div className='absolute right-10 top-11'>•</div>
+            </div>
+            <div className='flex justify-center items-center text-center w-full mt-16'>
+              <div>
+                <Image className='w-[600px] h-96' src={senf} alt='p91' />
+              </div>
+            </div>
+            <div className='text-center mt-8'>
+              <button className='bg-blue-600 px-10 py-3 rounded-lg text-white'>
+                استعلام مجوز از نظام صنفی رایانه ی
+              </button>
+            </div>
+          </div>
 
+          <div className="w-full h-[650px] bg-[#F5F6F7] border-t-8 border-t-blue-600 rounded-b-xl mt-32 rtl">
+            <div className="flex w-auto justify-end items-center p-10 text-right text-[30px] text-black space-x-2 rtl:space-x-reverse relative">
+              <div className='absolute right-16 top-10'>  عضویت در اتاق بازرگانی  </div>
+              <div className='absolute right-10 top-11'>•</div>
+            </div>
+            <div className='flex justify-center items-center text-center w-full mt-16'>
+              <div>
+                <Image className='w-[600px] h-96' src={Bazargan} alt='p91' />
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
