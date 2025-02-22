@@ -11,7 +11,7 @@ import React from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 function HomeBase() {
-  const queryClient = new QueryClient(); // ایجاد یک نمونه از QueryClient
+  const queryClient = new QueryClient(); 
 
   return (
     <QueryClientProvider client={queryClient}>

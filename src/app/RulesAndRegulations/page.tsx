@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import cir from "../../Image/cir.png";
 import { useResponsive } from "@/component-Home/ResponsiveContext/ResponsiveContext";
@@ -24,7 +24,7 @@ function RulesAndRegulations() {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <g id="Frame" clip-path="url(#clip0_2542_2469)">
+                      <g id="Frame" clipPath="url(#clip0_2542_2469)">
                         <path
                           id="Vector"
                           d="M122.31 90.91C123.768 90.91 124.95 89.728 124.95 88.27C124.95 86.812 123.768 85.63 122.31 85.63C120.852 85.63 119.67 86.812 119.67 88.27C119.67 89.728 120.852 90.91 122.31 90.91Z"
@@ -221,7 +221,7 @@ function RulesAndRegulations() {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <g id="Frame" clip-path="url(#clip0_2542_2433)">
+                      <g id="Frame" clipPath="url(#clip0_2542_2433)">
                         <path
                           id="Vector"
                           d="M146.25 90.91C147.708 90.91 148.89 89.728 148.89 88.27C148.89 86.812 147.708 85.63 146.25 85.63C144.792 85.63 143.61 86.812 143.61 88.27C143.61 89.728 144.792 90.91 146.25 90.91Z"
@@ -753,7 +753,7 @@ function RulesAndRegulations() {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <g id="Frame" clip-path="url(#clip0_2542_2469)">
+                        <g id="Frame" clipPath="url(#clip0_2542_2469)">
                           <path
                             id="Vector"
                             d="M122.31 90.91C123.768 90.91 124.95 89.728 124.95 88.27C124.95 86.812 123.768 85.63 122.31 85.63C120.852 85.63 119.67 86.812 119.67 88.27C119.67 89.728 120.852 90.91 122.31 90.91Z"
@@ -953,7 +953,7 @@ function RulesAndRegulations() {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <g id="Frame" clip-path="url(#clip0_2542_2433)">
+                        <g id="Frame" clipPath="url(#clip0_2542_2433)">
                           <path
                             id="Vector"
                             d="M146.25 90.91C147.708 90.91 148.89 89.728 148.89 88.27C148.89 86.812 147.708 85.63 146.25 85.63C144.792 85.63 143.61 86.812 143.61 88.27C143.61 89.728 144.792 90.91 146.25 90.91Z"

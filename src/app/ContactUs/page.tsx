@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Envelope from '../../Image/Envelope.png'
 import PhoneCall from '../../Image/PhoneCall.png'
 import MapPinLine from '../../Image/MapPinLine.png'

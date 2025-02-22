@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import mmm from '../../Image/mmm.png'
 import user from '../../Image/user.png'
 import ssm from '../../Image/ssm.png'
@@ -46,9 +46,9 @@ function AboutUS() {
                       id="Vector"
                       d="M19.5 13.5L12 21M12 21L4.5 13.5M12 21V3"
                       stroke="black"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </g>
                 </svg>

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import GroupA from "../Image/GroupA.png";
 import Groupb from "../Image/GroupB.png";
 import Groupc from "../Image/GroupC.png";
@@ -188,6 +188,7 @@ export default function BaseSixth() {
                         width={200}
                         height={80}
                         layout="intrinsic"
+                       
                       />
                     </div>
                     <div>

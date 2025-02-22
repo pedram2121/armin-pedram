@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import image1 from '../../src/Image/image 1.png'
 import image2 from '../../src/Image/image 2.png'
 import image3 from '../../src/Image/image 3.png'
@@ -35,11 +35,11 @@ function BaseFourth() {
                 className="flex gap-40 p-2 items-center text-center
                              justify-center overflow-x-auto "
               >
-                <Image src={image1} className="w-32 h-32  snap-center" />
-                <Image src={image2} className="w-32 h-32  snap-center" />
-                <Image src={image3} className="w-32 h-32  snap-center" />
-                <Image src={image4} className="w-32 h-32  snap-center" />
-                <Image src={image5} className="w-32 h-32  snap-center" />
+                <Image src={image1} alt="" className="w-32 h-32  snap-center" />
+                <Image src={image2} alt="" className="w-32 h-32  snap-center" />
+                <Image src={image3} alt="" className="w-32 h-32  snap-center" />
+                <Image src={image4} alt="" className="w-32 h-32  snap-center" />
+                <Image src={image5} alt="" className="w-32 h-32  snap-center" />
               </div>
             </div>
           </div>
@@ -59,22 +59,27 @@ function BaseFourth() {
               <div className="flex flex-col gap-8 p-2 items-center text-center justify-start px-4">
                 <Image
                   src={image1}
+                  alt=""
                   className="w-20 h-20 object-cover rounded-lg snap-center"
                 />
                 <Image
                   src={image2}
+                  alt=""
                   className="w-20 h-20 object-cover rounded-lg snap-center"
                 />
                 <Image
                   src={image3}
+                  alt=""
                   className="w-20 h-20 object-cover rounded-lg snap-center"
                 />
                 <Image
                   src={image4}
+                  alt=""
                   className="w-20 h-20 object-cover rounded-lg snap-center"
                 />
                 <Image
                   src={image5}
+                  alt=""
                   className="w-20 h-20 object-cover rounded-lg snap-center"
                 />
               </div>

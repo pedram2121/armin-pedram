@@ -1,39 +1,39 @@
-"use client"
+"use client";
 import React, { createContext, useContext, useEffect, useState } from "react";
 
-interface Ichildren  {
-    children: React.ReactNode;
+interface Ichildren {
+  children: React.ReactNode;
 }
 
 interface ICheckView {
-    isMobile: boolean;
+  isMobile: boolean;
 }
 
-export const CheckView = createContext<ICheckView>({ isMobile:false });
+export const CheckView = createContext<ICheckView>({ isMobile: false });
 
-export const useResponsive =()=>{
-     return useContext(CheckView);   
-}
+export const useResponsive = () => {
+  return useContext(CheckView);
+};
 
 function ResponsiveContext({ children }: Ichildren) {
-  
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState<boolean | null>(null); // Initialize with null
 
   useEffect(() => {
-    const handelRrsize = () => {
+    const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-    handelRrsize();
-    window.addEventListener("resize", handelRrsize);
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+
     return () => {
-      window.removeEventListener("resize", handelRrsize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
+  if (isMobile === null) return null; // Until the client-side logic is determined
+
   return (
-    <>
-      <CheckView.Provider value={{ isMobile }}>{children}</CheckView.Provider>
-    </>
+    <CheckView.Provider value={{ isMobile }}>{children}</CheckView.Provider>
   );
 }
 
