@@ -15,6 +15,10 @@ module.exports = {
         center: true,
         padding: "10px",
       },
+
+
+     
+
       fontFamily: {
         Vazirmatn1: "Vazirmatn1",
         Vazirmatn2: "Vazirmatn2",

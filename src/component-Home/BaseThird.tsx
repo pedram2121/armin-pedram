@@ -1,28 +1,17 @@
 "use client"
-import React, { useEffect, useState } from 'react';
 import Group3 from '../../src/Image/arrow-left.png'
 import Image from 'next/image';
+import { useResponsive } from './ResponsiveContext/ResponsiveContext';
 
 function BaseThird() {
 
-    const [isSmallScreen2, setIsSmallScreen2] = useState(false);
+    const { isMobile } = useResponsive();
 
-    useEffect(() => {
-        const handleResize2 = () => {
-            setIsSmallScreen2(window.innerWidth <= 768) // میگه بررسی کن فقط ببین اندازه صفحه بزرگه یا کوچیک
-        };
-        // این خط در ابتدای این یوزافکت بصورت عملی اجرا میشود و تابع فراخوانی میشود
-        // نکته جالب اینه که در خط بالایی که تابع رو فقط تعریف کردیم کامپایلر حالت و مختصات اونو ذخیره میکنه - همین و فعلا کاری نمیکنه
-        handleResize2();
-        window.addEventListener("resize", handleResize2);
-        return () => window.removeEventListener("resize", handleResize2)
-    }, [])
-    return (
+    return(
         <div
             className="h-screen w-[100%] flex items-center justify-between relative overflow-hidden" style={{ background: '#387CFF' }} >
-
             {
-                !isSmallScreen2 ? (
+                !isMobile ? (
 
                     <div className="container">
                         <div className='font-Vazirmatn2'>
@@ -172,10 +161,9 @@ function BaseThird() {
                         </div>
                     </div>
 
-
                 ) : (
 
-                    <div className='mt-28  text-white flex flex-col items-center 
+                    <div className='mt-20  text-white flex flex-col items-center 
                         text-center min-h-screen overflow-y-auto overflow-x-hidden'>
 
                         {/* مختص متن و دکمه فعلا */}
@@ -203,14 +191,14 @@ function BaseThird() {
                         </div>
 
 
-                        <div className='mt-16 text-center'>
-                            <div className='flex-col relative space-y-5'>
+                        <div className='mt-7 text-center'>
+                            <div className='flex-col relative space-y-3'>
                                     <div className='bg-slate-200 h-24 w-72 rounded-lg'>
                                         <div className='text-center'>
                                             <div className='pt-2 font-Vazirmatn2 text-black text-[14px]'>
                                                 ثـبـت نـام و احـراز هویـت
                                             </div>
-                                            <div className='pt-3 font-Vazirmatn2 text-black text-[11px]'>
+                                            <div className='pt-3 font-Vazirmatn2 text-black text-[10px]'>
                                                 در کمتر از ۲ دقیقه تو میلی ثبت‌نام کن و احراز هویتت رو انجام بده
                                             </div>
                                             <div className='bg-[#387CFF] 
@@ -225,7 +213,7 @@ function BaseThird() {
                                             <div className='pt-2 font-Vazirmatn2 text-black text-[14px]'>
                                                 ثـبـت نـام و احـراز هویـت
                                             </div>
-                                            <div className='pt-3 font-Vazirmatn2 text-black text-[11px]'>
+                                            <div className='pt-3 font-Vazirmatn2 text-black text-[10px]'>
                                                 در کمتر از ۲ دقیقه تو میلی ثبت‌نام کن و احراز هویتت رو انجام بده
                                             </div>
                                             <div className='bg-[#387CFF] 
@@ -240,7 +228,7 @@ function BaseThird() {
                                             <div className='pt-2 font-Vazirmatn2 text-black text-[14px]'>
                                                 ثـبـت نـام و احـراز هویـت
                                             </div>
-                                            <div className='pt-3 font-Vazirmatn2 text-black text-[11px]'>
+                                            <div className='pt-3 font-Vazirmatn2 text-black text-[10px]'>
                                                 در کمتر از ۲ دقیقه تو میلی ثبت‌نام کن و احراز هویتت رو انجام بده
                                             </div>
                                             <div className='bg-[#387CFF] 
@@ -255,7 +243,7 @@ function BaseThird() {
                                             <div className='pt-2 font-Vazirmatn2 text-black text-[14px]'>
                                                 ثـبـت نـام و احـراز هویـت
                                             </div>
-                                            <div className='pt-3 font-Vazirmatn2 text-black text-[11px]'>
+                                            <div className='pt-3 font-Vazirmatn2 text-black text-[10px]'>
                                                 در کمتر از ۲ دقیقه تو میلی ثبت‌نام کن و احراز هویتت رو انجام بده
                                             </div>
                                             <div className='bg-[#387CFF] absolute
@@ -270,10 +258,8 @@ function BaseThird() {
 
                 )
             }
-
-
         </div>
-    );
+    )
 }
 
 export default BaseThird;

@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/component-Home/Navbar";
 import BaseSixth from "@/component-Home/BaseSixth";
-
+import ResponsiveContext from "../component-Home/ResponsiveContext/ResponsiveContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,14 +27,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body >
-
-        <Navbar />
-
-        {children}
-
-        <BaseSixth />
-        
+      <body>
+        <ResponsiveContext>
+          <Navbar />
+          {children}
+          <BaseSixth />
+        </ResponsiveContext>
       </body>
     </html>
   );
